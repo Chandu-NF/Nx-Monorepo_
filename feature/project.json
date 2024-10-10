@@ -1,0 +1,19 @@
+{
+  "name": "feature",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "feature/src",
+  "projectType": "library",
+  "tags": ["scope:feature"],
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/feature",
+        "main": "feature/src/index.ts",
+        "tsConfig": "feature/tsconfig.lib.json",
+        "assets": ["feature/*.md"]
+      }
+    }
+  }
+}

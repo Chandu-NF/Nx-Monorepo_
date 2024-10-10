@@ -1,0 +1,9 @@
+{
+  "name": "ToDoList",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/ToDoList/src",
+  "projectType": "application",
+  "tags": ["scope:ToDoList"],
+  "// targets": "to see all targets run: nx show project ToDoList --web",
+  "targets": {}
+}

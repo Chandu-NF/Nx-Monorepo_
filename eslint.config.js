@@ -17,8 +17,16 @@ module.exports = [
           allow: ['^.*/eslint(\\.base)?\\.config\\.[cm]?js$'],
           depConstraints: [
             {
-              sourceTag: '*',
-              onlyDependOnLibsWithTags: ['*'],
+              sourceTag: 'scope:bookstore',
+              onlyDependOnLibsWithTags: ['scope:feature', 'scope:ui'],
+            },
+            {
+              sourceTag: 'scope:ToDoList',
+              onlyDependOnLibsWithTags: ['scope:feature', 'scope:ui'],
+            },
+            {
+              sourceTag: 'scope:feature',
+              onlyDependOnLibsWithTags: ['scope:feature', 'scope:ui'],
             },
           ],
         },
